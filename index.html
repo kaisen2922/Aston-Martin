@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Martin Vantage GT4 | Technical Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader-overlay" id="loader">
+        <div class="loader-content">
+            <h2 class="syncopate">PREPARING SEQUENCE</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+            <p class="premium-text" id="load-status">0%</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="logo-container">
+            <span class="logo syncopate">ASTON MARTIN</span>
+            <span class="sub-logo outfit">VANTAGE GT4</span>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-links syncopate">
+                <li><a href="#dossier">DOSSIER</a></li>
+                <li><a href="#investment">INVESTMENT</a></li>
+                <li><a href="#heritage">HERITAGE</a></li>
+                <li><a href="#model-range">RANGE</a></li>
+                <li><a href="#f1" class="highlight">F1</a></li>
+            </ul>
+        </nav>
+        <div class="technical-stats outfit">
+            <div class="stat"><span>CHASSIS</span><strong>GT4-001</strong></div>
+            <div class="stat"><span>ENGINE</span><strong>4.0L V8</strong></div>
+            <div class="stat"><span>POWER</span><strong>500+ BHP</strong></div>
+        </div>
+    </header>
+
+    <main class="scrolly-container">
+
+        <section class="visual-sequence-section">
+            <div class="sticky-wrapper">
+                <canvas id="car-canvas"></canvas>
+
+                <div class="hud-layer" id="hud">
+                    <div class="hud-panel top-left outfit">
+                        <div class="bracket"></div>
+                        <div class="content">
+                            <span class="label">SCANNING ASSET...</span>
+                            <h3 class="highlight">AERODYNAMICS</h3>
+                        </div>
+                    </div>
+
+                    <div class="hud-panel center-right outfit" id="dynamic-text">
+                        <div class="bracket-right"></div>
+                        <div class="content">
+                            <span class="label">SYSTEM STATUS: NOMINAL</span>
+                            <h2 class="heading syncopate" id="hud-heading">PURE PERFORMANCE</h2>
+                            <p class="description outfit" id="hud-desc">Precision engineered for the circuit. Every
+                                line, every curve, optimized for velocity.</p>
+                        </div>
+                    </div>
+
+                    <div class="scroll-indicator outfit">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <span>SCROLL TO EXPLORE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sequence-trigger"></div>
+        </section>
+
+
+        <section class="content-section" id="dossier">
+            <div class="section-container">
+                <div class="section-header syncopate">
+                    <span class="tag">TECHNICAL</span>
+                    <h2>DOSSIER</h2>
+                </div>
+                <div class="spec-grid outfit">
+                    <div class="spec-card">
+                        <span class="label">ENGINE</span>
+                        <p>4.0L V8 TWIN-TURBO</p>
+                        <span class="detail">476 PS / 350 KW (BOP REGULATED)</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="label">TRANSMISSION</span>
+                        <p>ZF 6-SPEED PADDLESHIFT</p>
+                        <span class="detail">DERIVED FROM 8-SPEED AUTOMATIC</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="label">CHASSIS</span>
+                        <p>BONDED ALUMINIUM</p>
+                        <span class="detail">FIA-APPROVED INTEGRATED ROLL CAGE</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="label">DYNAMICS</span>
+                        <p>KW 2-WAY ADJUSTABLE</p>
+                        <span class="detail">RACING-SPEC CAMBER RANGE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="content-section" id="investment">
+            <div class="section-container">
+                <div class="section-header syncopate">
+                    <span class="tag">ACQUISITION</span>
+                    <h2>INVESTMENT</h2>
+                </div>
+                <div class="price-container outfit">
+                    <div class="price-box">
+                        <span class="label">FACTORY NEW</span>
+                        <h3 class="syncopate">₹2.25 CRORES</h3>
+                        <p class="detail">EX-FACTORY | IMPORT DUTIES APPLICABLE</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><span>01</span> BOSCH DDU11 DISPLAY</li>
+                        <li><span>02</span> BESPOKE FORGED 18" WHEELS</li>
+                        <li><span>03</span> NATURAL FLAX FIBRE BONNET</li>
+                        <li><span>04</span> BOSCH MOTORSPORT ECU</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="content-section" id="heritage">
+            <div class="section-container">
+                <div class="section-header syncopate">
+                    <span class="tag">LEGACY</span>
+                    <h2>HERITAGE</h2>
+                </div>
+                <div class="heritage-content outfit">
+                    <div class="history-block">
+                        <h4 class="syncopate">SINCE 1913</h4>
+                        <p class="description">Founded by Lionel Martin and Robert Bamford. From the first hill climb
+                            victory in 1915 to the legendary 1959 Le Mans victory with the DBR1, Aston Martin has
+                            defined the essence of British racing soul.</p>
+                    </div>
+                    <div class="specs-block">
+                        <h4 class="syncopate">COMPANY SPECS</h4>
+                        <div class="mini-spec"><span>HQ</span><strong>GAYDON, WARWICKSHIRE</strong></div>
+                        <div class="mini-spec"><span>DNA</span><strong>PURE PERFORMANCE</strong></div>
+                        <div class="mini-spec"><span>STATUS</span><strong>GT RACING DOMINANCE</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="model-range">
+            <div class="section-container">
+                <div class="section-header syncopate">
+                    <span class="tag">EXCLUSIVITY</span>
+                    <h2>MODEL RANGE</h2>
+                </div>
+                <div class="model-grid outfit">
+                    <div class="model-card">
+                        <div class="model-image">
+                            <img src="assets/models/db12.jpg" alt="Aston Martin DB12">
+                        </div>
+                        <div class="model-info">
+                            <h3 class="syncopate">DB12</h3>
+                            <div class="model-specs">
+                                <span>V8 TWIN-TURBO</span>
+                                <span>680 PS</span>
+                                <span>3.6S 0-100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-card">
+                        <div class="model-image">
+                            <img src="assets/models/vanquish.jpg" alt="Aston Martin Vanquish">
+                        </div>
+                        <div class="model-info">
+                            <h3 class="syncopate">VANQUISH</h3>
+                            <div class="model-specs">
+                                <span>V12 TWIN-TURBO</span>
+                                <span>835 PS</span>
+                                <span>3.2S 0-100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-card">
+                        <div class="model-image">
+                            <img src="assets/models/valhalla.jpg" alt="Aston Martin Valhalla">
+                        </div>
+                        <div class="model-info">
+                            <h3 class="syncopate">VALHALLA</h3>
+                            <div class="model-specs">
+                                <span>V8 HYBRID</span>
+                                <span>1012 PS</span>
+                                <span>2.5S 0-100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-card">
+                        <div class="model-image">
+                            <img src="assets/models/dbx.jpg" alt="Aston Martin DBX707">
+                        </div>
+                        <div class="model-info">
+                            <h3 class="syncopate">DBX 707</h3>
+                            <div class="model-specs">
+                                <span>V8 TWIN-TURBO</span>
+                                <span>707 PS</span>
+                                <span>3.3S 0-100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-card">
+                        <div class="model-image">
+                            <img src="assets/models/valiant.jpg" alt="Aston Martin Valiant">
+                        </div>
+                        <div class="model-info">
+                            <h3 class="syncopate">VALIANT</h3>
+                            <div class="model-specs">
+                                <span>V12 TWIN-TURBO</span>
+                                <span>745 PS</span>
+                                <span>TRACK FOCUSED</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-card f1-trigger">
+                        <div class="model-image">
+                            <img src="assets/f1/amr25-full.jpg" alt="AMR25 F1">
+                        </div>
+                        <div class="model-info">
+                            <h3 class="syncopate">FORMULA ONE</h3>
+                            <div class="model-specs">
+                                <span>AMR25</span>
+                                <span>1000+ BHP</span>
+                                <a href="#f1" class="explore-btn outfit">EXPLORE F1</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="content-section" id="f1">
+            <div class="section-container">
+                <div class="section-header syncopate">
+                    <span class="tag">FORMULA ONE®</span>
+                    <h2>AMR25</h2>
+                    <p class="tagline">CHALLENGING THE LIMITS OF POSSIBILITY</p>
+                </div>
+
+                <div class="f1-hero-container">
+                    <div class="f1-main-image">
+                        <img src="assets/f1/amr25-full.jpg" alt="AMR25 Formula One® Car 2025">
+                        <div class="f1-specs-overlay syncopate">
+                            <div class="spec-bit">
+                                <span class="spec-label">POWER</span>
+                                <span class="spec-value">1000+ BHP</span>
+                            </div>
+                            <div class="spec-bit">
+                                <span class="spec-label">ENGINE</span>
+                                <span class="spec-value">1.6L V6 HYBRID</span>
+                            </div>
+                            <div class="spec-bit">
+                                <span class="spec-label">WEIGHT</span>
+                                <span class="spec-value">798 KG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f1-gallery grid-3">
+                    <div class="gallery-item">
+                        <img src="assets/f1/amr25-top.jpg" alt="AMR25 Aero Profile">
+                        <span class="gallery-label outfit">AERO OPTIMIZATION</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/f1/amr25-wheel.jpg" alt="AMR25 Suspension detail">
+                        <span class="gallery-label outfit">SUSPENSION GEOMETRY</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/f1/amr25-detail.jpg" alt="AMR25 Cockpit detail">
+                        <span class="gallery-label outfit">COCKPIT ARCHITECTURE</span>
+                    </div>
+                </div>
+
+                <div class="f1-cta outfit">
+                    <p>ENGINEERED AT THE AMR TECHNOLOGY CAMPUS, SILVERSTONE.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer outfit">
+        <div class="coord-system">
+            <span>X: 45.234</span>
+            <span>Y: 12.876</span>
+            <span>Z: 00.000</span>
+        </div>
+        <div class="copyright">
+            © 2025 ASTON MARTIN. JOYDIP ACHARJEE
+        </div>
+        <div class="branding">
+            ENGINEERED IN GAYDON, UK
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
